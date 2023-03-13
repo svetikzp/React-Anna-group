@@ -1,0 +1,39 @@
+.categories {
+   display: flex;
+   justify-content: space-around;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 12px;
+    color: #048780;
+    border: 3px solid #1a6d64;
+    margin-bottom: 10px;
+  }
+  
+  .category-item {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid;
+    color: #cb3dd8;
+    background-color: #b0e9dd;
+    font-size: 13px;
+    width:150px;
+  }
+  
+  .category-item:hover {
+    background-color: #f1d7f3;
+    color: #754cf9;
+    border: 2px solid #54c0b1;
+  }
+
+  .category-collection {
+    border: 3px;
+    background-color: #d6f4ee;
+  }
+
+
+  
+  
+
+  
