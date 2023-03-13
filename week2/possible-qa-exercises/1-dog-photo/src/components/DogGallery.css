@@ -3,7 +3,7 @@ p {
     font-size: 20px;  
     text-align: center;
     font-family: 'Arial', sans-serif;
-    color: #a90da1;
+    color: #920e8c;
   }
 
   li {
@@ -21,7 +21,7 @@ p {
       margin:5px;
       border-radius: 100px; 
       border: 3px solid green;
-      box-shadow: 0 0 7px #666;
+      box-shadow: 0 0 7px #e3dfdf;
   }
 
   img:hover {
