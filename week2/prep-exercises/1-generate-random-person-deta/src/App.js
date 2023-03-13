@@ -5,7 +5,7 @@ function App() {
    
    return (
       <div className="App">
-         <h2>Information about the person</h2>
+         <h2>Information about the Person</h2>
          <PersonController />
       </div>
    );

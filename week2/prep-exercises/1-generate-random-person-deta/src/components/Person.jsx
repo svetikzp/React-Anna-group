@@ -13,14 +13,13 @@ function Person({person}) {
              <li>Cell: {person.cell}</li>
            </ul>
          ))
+       ) : (
+         <div>Loading...</div>
        )
-        : (
-         <p>Loading...</p>
-       )
-      }
+     }
      </div>
    );
  }
- 
+
 
  export default Person;
