@@ -1,4 +1,4 @@
-# Generate random person details
+# 
 
 Let's make a simple app by following a step by step approach to get a hang of API calls and testing.
 

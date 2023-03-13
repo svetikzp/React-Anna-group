@@ -1,35 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import Person from './Person'
+import Button from './Button';
 
-export default function PersonController() {
-   const [person, setPerson] = React.useState(null)
-   const [isLoading, setIsLoading] = React.useState(true);
+function PersonController() {
+   //const[people, setPeople] = useState(null);
+   const[person, setPerson] = useState(null);
 
-   React.useEffect(() => { getPerson() }, []);
-
-   async function getPerson() {
-       //fetch('https://www.randomuser.me/api?results=2')
-          //.then((response) => response.json())
-          //.then((person) => { setPerson(person) })
-       //const response = await fetch('https://www.randomuser.me/api?results=2');
-      // const person = await response.json();
-      const person = await (await fetch('https://www.randomuser.me/api?results=2')).json();
-      // cons
-      setPerson(person);
-      setIsLoading(false);
-   }
-
+   const getPerson = async() => {
+     const response = await fetch ('https://www.randomuser.me/api?results=1');
+     const data = await response.json();
+     const person = data.results.map(({name, email, phone, cell}) => ({
+       firstName: name.first,
+       lastName: name.last,
+       email,
+       phone,
+       cell
+     }));
+ 
+     setPerson(person);
+   };
+ 
+   useEffect(() => {
+     getPerson();
+   }, []);
+ 
+   const handleClick = () => {
+     setPerson([]);
+     getPerson();
+   };
+ 
    return (
-      <div>
-         {isLoading ? <div>Loading...</div> :
-            person.results.map((item) => {
-               return <Person
-                  firstName={item.name.first}
-                  lastName={item.name.last}
-                  email={item.email}
-                  key={item.id.value} />
-            })}
-      </div>
-   )
+     <>
+       <Person person={person} />
+       <Button onClick={handleClick} text="New person details" />
+     </>
+   );
+ }
+ 
+ export default PersonController;
+ 
+ 
+ 
 
-}
+ 

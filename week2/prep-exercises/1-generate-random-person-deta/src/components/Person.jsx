@@ -1,11 +1,26 @@
 import React from 'react'
 
-export default function Person({ firstName, lastName, email }) {
+function Person({person}) {
    return (
-      <ul className='listPerson'>
-    <li>First name: {firstName}</li>
-    <li>Last name: {lastName}</li>
-    <li>Email: {email}</li>
-  </ul>
-   )
-}
+     <div>
+       {person && person.length ?  (
+         person.map((person, index) => (
+           <ul key={index}>
+             <li>First name: {person.firstName}</li>
+             <li>Last name: {person.lastName}</li>
+             <li>Email: {person.email}</li>
+             <li>Phone: {person.phone}</li>
+             <li>Cell: {person.cell}</li>
+           </ul>
+         ))
+       )
+        : (
+         <p>Loading...</p>
+       )
+      }
+     </div>
+   );
+ }
+ 
+
+ export default Person;
