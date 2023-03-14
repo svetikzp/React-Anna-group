@@ -12,20 +12,12 @@ button {
   margin:30px;
   height: 30px;
   border-radius: 12px; 
-  border: 2px solid rgb(13, 244, 179);
-  background-color: rgb(244, 228, 242);
+  border: 2px solid rgb(32, 240, 181);
+  background-color: rgb(245, 233, 243);
 }
 
 button:hover {
-  border: 2px solid rgb(239, 110, 228);
-  background-color: rgb(229, 241, 242);
+  border: 3px solid rgb(239, 110, 228);
+  background-color: rgb(225, 241, 243);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -3,9 +3,7 @@ import Person from './Person'
 import Button from './Button';
 
 function PersonController() {
-   //const[people, setPeople] = useState(null);
    const[person, setPerson] = useState(null);
-
    const getPerson = async() => {
      const response = await fetch ('https://www.randomuser.me/api?results=1');
      const data = await response.json();
