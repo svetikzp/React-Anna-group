@@ -1,7 +1,8 @@
-function Category ({data, className, onClick})  {
+
+
+function CategoryPages  ({data, className, onClick})  {
     return (
         <div className={`category-item ${className}`} onClick={() => onClick(data)}>{data}</div>
     )
 }
-
-export default Category;
+export default CategoryPages;

@@ -1,17 +1,17 @@
-import {  Route, Routes} from 'react-router-dom'
+import { Route, Routes} from 'react-router-dom'
 import './App.css';
-import ProductsPage from './pages/ProductsPage'
-import ProductOptionsPage from './pages/ProductOptionsPage'
-
+import ProductsList from './pages/ProductListPages/ProductList';
+import ProductDetail from './pages/ProductDetail/ProductDetail';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 function App() {
-
    return (
       <div className="App">
          <Routes>
-            <Route path='/' element={<ProductsPage />} />
-            <Route path='/product/:itemId' element={<ProductOptionsPage />} />
+            <Route path='/' element={<ProductsList />} />
+            <Route path='/product/:id' element={<ProductDetail />} />
+            <Route path='*' element={<NotFoundPage />} />
          </Routes>
       </div>
    );
