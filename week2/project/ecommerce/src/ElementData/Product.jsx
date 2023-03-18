@@ -1,5 +1,4 @@
 //import "./Products.css";
-
 async function getProduct (id) {
   const response = await fetch(`https://fakestoreapi.com/products/${id}`)
   if (!response.ok) {

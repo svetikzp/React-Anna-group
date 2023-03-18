@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from "react-router-dom";
 
-function ProductPages({ id, image, title, description }) {
+function Product({ id, image, title, description }) {
   return (
     <li className='product-item'>
       <Link className='product' to={`/product/${id}`}>
@@ -12,4 +11,4 @@ function ProductPages({ id, image, title, description }) {
   )
 }
 
-export default ProductPages;
+export default Product;

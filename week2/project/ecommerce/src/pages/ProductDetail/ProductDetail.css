@@ -2,17 +2,17 @@
     display: flex;
 }
 
-.product-details {
+.product-detail {
     align-items: center;
     display: flex;
 }
 
-.product-details-image {
+.product-detail-image {
     min-width: 50%;
 }
 
 @media (min-width: 600px) {
-    .product-details- {
+    .product-detail {
         flex-direction: row-reverse;
     }
 }

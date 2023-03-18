@@ -1,6 +1,6 @@
 import Categories from '../../ElementData/Categories';
-import Products from '../ProductListPages/ProductList';
-import getProducts from './ProductElemPages/ProductsPages';
+import Products from './../ProductListPages/ProductList';
+import getProducts from './ProductElemPages/Products';
 import getCategories from '../../ElementData/Categories';
 import { useState, useEffect } from 'react';
 import ErrorMessage from '../../components/ErrorMessage'

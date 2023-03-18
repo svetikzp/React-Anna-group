@@ -1,4 +1,3 @@
-  import './Products.css';
 
   async function getProducts (category) {
     const url = `https://fakestoreapi.com/products${category?'/category/':''}${category}`

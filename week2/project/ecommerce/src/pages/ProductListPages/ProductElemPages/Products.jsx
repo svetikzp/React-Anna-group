@@ -1,8 +1,7 @@
 //import './Products.css';
-import Product from '../ProductElemPages/ProductsPages';
-//import Categories from '../Categories';
+import Product from './Product'
 
-function ProductsPages({ products, isLoading }) {
+function Products({ products, isLoading }) {
   return (
     <>
       {isLoading ?
@@ -23,4 +22,4 @@ function ProductsPages({ products, isLoading }) {
   )
 }
 
-export default ProductsPages;
+export default Products;

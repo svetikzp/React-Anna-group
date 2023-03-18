@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import getProduct from '../ProductDetail/ProductDetail';
-//import '../ProductDetail.css'
-import ErrorMessage from '../../components/ErrorMessage'
+//import ProductDetail from '../../ProductDetail.css';
+import ErrorMessage from '../../components/ErrorMessage';
 
 
 function ProductDetail() {
@@ -41,7 +41,6 @@ function ProductDetail() {
                                 <div className="product-detail-image">
                                     <img className="product-image" src={product.image} alt={product.title} />
                                 </div>
-
                             </div>
                         </>
                     }

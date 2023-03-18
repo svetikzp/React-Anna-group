@@ -2,7 +2,7 @@ import React from 'react';
 import '../../components/Categories.css';
 //import Category from '../components/Category'
 
-function CategoriesPages ({categories, state, setState, setIsLoading}) {
+function CategoriesPages ({categories, state, setState}) {
     
     function changeFilter(newCategory) {
         setState(prevState =>  prevState === newCategory ? '' : newCategory );
