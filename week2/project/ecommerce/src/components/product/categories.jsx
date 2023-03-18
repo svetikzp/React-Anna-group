@@ -1,8 +1,8 @@
 import React from 'react'
-import ErrorMessage from '../common/ErrorMessage';
+import ErrorMessage from '../overallElem/ErrorMessage';
 import Category from './category'
-import Spinner from '../common/Spinner/Spinner'
-import './css/product.css'
+import Revs from '../overallElem/Revs/Revs'
+import '../product/product.css'
 
 function Categories({ onClick, activeCategory }) {
    const [CategoriesList, setCategoriesList] = React.useState([]);
@@ -30,7 +30,7 @@ function Categories({ onClick, activeCategory }) {
       <div className='categories-container'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          <div className='categories'>
-            {isLoading ? <div><Spinner /></div> :
+            {isLoading ? <div><Revs /></div> :
                CategoriesList.map((category, index) => {
                   return <Category key={index} category={category} onClick={onClick} activeCategory={activeCategory} />
                })}

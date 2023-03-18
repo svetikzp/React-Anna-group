@@ -1,8 +1,8 @@
 import Product from './product'
 import React from 'react'
-import ErrorMessage from '../common/ErrorMessage'
-import './css/product.css'
-import Spinner from '../common/Spinner/Spinner'
+import ErrorMessage from '../overallElem/ErrorMessage'
+import '../product.css'
+import Revs from '../overallElem/Revs/Revs'
 
 function Products({ prodCategory }) {
    const [productList, setProductList] = React.useState([])
@@ -27,7 +27,6 @@ function Products({ prodCategory }) {
       }
    }
 
-   // eslint-disable-next-line
    React.useEffect(() => { getProductList() }, [prodCategory])
 
    return (
@@ -35,7 +34,7 @@ function Products({ prodCategory }) {
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          <div className='productList-conteiner'>
             <div className='productList'>
-               {isLoading ? <div><Spinner /></div> :
+               {isLoading ? <div><Revs /></div> :
                   productList.map((item) => <Product key={item.id} item={item} />)}
             </div>
          </div >

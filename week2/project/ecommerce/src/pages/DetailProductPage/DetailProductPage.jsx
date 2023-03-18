@@ -2,8 +2,8 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import DetailProduct from '../../components/product/DetailProduct'
 import './detailProductPage.css'
-import ErrorMessage from '../../components/common/ErrorMessage';
-import Spinner from '../../components/common/Spinner/Spinner';
+import ErrorMessage from '../../components/overallElem/ErrorMessage';
+import Revs from '../../components/overallElem/Revs/Revs';
 
 export default function ProductDetail() {
    const { itemId } = useParams();
@@ -33,7 +33,7 @@ export default function ProductDetail() {
    return (
       <div className='detailItemContainer'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
-         {isLoading ? <Spinner /> : <DetailProduct itemInfo={itemInfo} />}
+         {isLoading ? <Revs /> : <DetailProduct itemInfo={itemInfo} />}
       </div>
    )
 }
