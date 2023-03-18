@@ -2,7 +2,7 @@ import React from 'react'
 import ErrorMessage from '../overallElem/ErrorMessage';
 import Category from './category'
 import Revs from '../overallElem/Revs/Revs'
-import '../product/product.css'
+import './product.css'
 
 function Categories({ onClick, activeCategory }) {
    const [CategoriesList, setCategoriesList] = React.useState([]);
@@ -27,7 +27,7 @@ function Categories({ onClick, activeCategory }) {
    }
 
    return (
-      <div className='categories-container'>
+      <div className='categories-collection '>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          <div className='categories'>
             {isLoading ? <div><Revs /></div> :

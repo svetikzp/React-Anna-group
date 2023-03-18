@@ -1,4 +1,4 @@
-.categories-container {
+.categories-collection {
     position: sticky;
     top: 0;
     background: rgba(255, 255, 255, 0.2);
@@ -17,7 +17,7 @@
     justify-content: center;
  }
  
- .productList-conteiner {
+ .productList-collection {
     display: flex;
     justify-content: center;
  }

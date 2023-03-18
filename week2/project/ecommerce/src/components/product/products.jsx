@@ -1,7 +1,7 @@
 import Product from './product'
 import React from 'react'
 import ErrorMessage from '../overallElem/ErrorMessage'
-import '../product.css'
+import '../product/product.css'
 import Revs from '../overallElem/Revs/Revs'
 
 function Products({ prodCategory }) {
@@ -27,12 +27,12 @@ function Products({ prodCategory }) {
       }
    }
 
-   React.useEffect(() => { getProductList() }, [prodCategory])
+   React.useEffect(() => { getProductList() }, [prodCategory] )
 
    return (
       <div>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
-         <div className='productList-conteiner'>
+         <div className='productList-collection'>
             <div className='productList'>
                {isLoading ? <div><Revs /></div> :
                   productList.map((item) => <Product key={item.id} item={item} />)}
