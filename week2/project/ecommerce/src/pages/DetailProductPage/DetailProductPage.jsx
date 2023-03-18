@@ -22,9 +22,9 @@ export default function ProductDetail() {
          setErrorObj({ isError: true, message: error.message })
       }
   
-      setTimeout(() => {
+      finally {
          setIsLoading(false);
-       }, 1000)
+      }
       
    }, [itemId])
 
