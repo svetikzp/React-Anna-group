@@ -1,7 +1,7 @@
 import Product from './product';
 import React, { useState } from 'react';
 import ErrorMessage from '../../../components/overallElem/error/ErrorMessage';
-import '../../../../src/pages/ProductsPage/products/style/product.css';
+import '../products/style/product.css';
 import Revs from '../../../components/overallElem/Revs/Revs'
 
 function Products({ prodCategory }) {

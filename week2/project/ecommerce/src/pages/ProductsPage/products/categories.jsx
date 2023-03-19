@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ErrorMessage from '../../../components/overallElem/error/ErrorMessage';
 import Category from './category';
 import Revs from '../../../components/overallElem/Revs/Revs';
-//import './ProductsPage/product.css'
+import '../products/style/product.css'
 
 function Categories({ onClick, activeCategory }) {
    const [CategoriesList, setCategoriesList] = useState([]);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
-import DetailProductPage from '../../pages/DetailProductPage/DetailProductPage';
-import '../../pages/DetailProductPage/detailProductPage.css';
+import DetailProduct from '../../pages/DetailProductPage/DetailProduct';
+import '../DetailProductPage/detailProductPage.css';
 import ErrorMessage from '../../components/overallElem/error/ErrorMessage';
 import Revs from '../../components/overallElem/Revs/Revs';
 
@@ -32,7 +32,7 @@ export default function ProductDetail() {
       <div className='detailItemContainer'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          {isLoading && <Revs />}
-         {itemInfo && <DetailProductPage itemInfo={itemInfo} />}
+         {itemInfo && <DetailProduct itemInfo={itemInfo} />}
       </div>
    )
 }
