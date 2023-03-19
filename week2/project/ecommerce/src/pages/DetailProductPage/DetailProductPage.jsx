@@ -14,7 +14,7 @@ export default function ProductDetail() {
    const getItemInfo = useCallback(async () => {
       try {
          setIsLoading(true);
-         const promise = await fetch(`https://fakestoreapi.com/products/${itemId}`);
+         const promise = await fetch(`https://dummyjson.com/products/${itemId}`);
          const item = await promise.json();
          setItemInfo(item);
       }

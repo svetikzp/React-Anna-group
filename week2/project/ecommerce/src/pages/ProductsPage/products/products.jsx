@@ -14,8 +14,8 @@ function Products({ prodCategory }) {
       try {
          setIsLoading(true);
          const response = (prodCategory !== 'All items')
-            ? await fetch(`https://fakestoreapi.com/products/category/${prodCategory}`)
-            : await fetch('https://fakestoreapi.com/products')
+            ? await fetch(`https://dummyjson.com/products/category/${prodCategory}`)
+            : await fetch('https://dummyjson.com/products')
          const items = await response.json();
          setProductList(items);
       }
