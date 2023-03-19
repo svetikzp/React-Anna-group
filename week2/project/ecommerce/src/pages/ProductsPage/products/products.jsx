@@ -1,7 +1,7 @@
 import Product from './product'
-import React, { useState } from 'react'
-import ErrorMessage from '../../../components/common/Error/ErrorMessage'
-import '../css/product.css'
+import React, { useState, useEffect } from 'react'
+import ErrorMessage from '../../../components/common/Error/ErrorMessage';
+import '../css/product.css';
 import Revs from '../../../components/common/Revs/Revs'
 
 function Products({ prodCategory }) {
@@ -27,8 +27,8 @@ function Products({ prodCategory }) {
       }
    }
 
-   // eslint-disable-next-line
-   React.useEffect(() => { getProductList() }, [prodCategory])
+   /*useEffect(() => { getProductList()} , [prodCategory] )*/
+   useEffect(() => { getProductList()})
 
    return (
       <div>
