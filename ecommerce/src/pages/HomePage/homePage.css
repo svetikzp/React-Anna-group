@@ -1,5 +1,4 @@
-
- .homePage {
+.homePage {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,5 +6,4 @@
     justify-content: center;
     align-items: center;
  }
- 
  
