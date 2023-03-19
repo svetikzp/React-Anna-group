@@ -2,7 +2,7 @@ import Product from './product'
 import React, { useState } from 'react'
 import ErrorMessage from '../../../components/common/Error/ErrorMessage'
 import '../css/product.css'
-import Spinner from '../../../components/common/Spinner/Spinner'
+import Revs from '../../../components/common/Revs/Revs'
 
 function Products({ prodCategory }) {
    const [productList, setProductList] = useState([])
@@ -33,9 +33,9 @@ function Products({ prodCategory }) {
    return (
       <div>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
-         <div className='productList-conteiner'>
+         <div className='productList-collection'>
             <div className='productList'>
-               {isLoading ? <div><Spinner /></div> :
+               {isLoading ? <div><Revs /></div> :
                   productList.map((item) => <Product key={item.id} item={item} />)}
             </div>
          </div >

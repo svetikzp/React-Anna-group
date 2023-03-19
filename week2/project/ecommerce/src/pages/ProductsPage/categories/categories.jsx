@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ErrorMessage from '../../../components/common/Error/ErrorMessage';
 import Category from './category'
-import Spinner from '../../../components/common/Spinner/Spinner'
+import Revs from '../../../components/common/Revs/Revs'
 import '../css/product.css'
 
 function Categories({ onClick, activeCategory }) {
@@ -27,10 +27,10 @@ function Categories({ onClick, activeCategory }) {
    }
 
    return (
-      <div className='categories-container'>
+      <div className='categories-collection'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          <div className='categories'>
-            {isLoading ? <div><Spinner /></div> :
+            {isLoading ? <div><Revs /></div> :
                CategoriesList.map((category, index) => {
                   return <Category key={index} category={category} onClick={onClick} activeCategory={activeCategory} />
                })}

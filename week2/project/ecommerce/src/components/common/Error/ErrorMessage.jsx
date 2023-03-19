@@ -7,3 +7,4 @@ export default function ErrorMessage({ errorMsg }) {
          <h3 className='errorMessage'>{`ERROR! ${errorMsg}`}</h3>
       </div>
    )
+}

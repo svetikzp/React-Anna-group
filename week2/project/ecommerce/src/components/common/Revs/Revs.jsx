@@ -1,10 +1,10 @@
 import React from 'react'
-import './spinner.css'
+import './revs.css'
 
-export default function Spinner() {
+export default function Revs() {
    return (
       <div>
-         <div className='spinner'></div>
+         <div className='revs'></div>
          <p className='loading'>Loading...</p>
       </div>
    )
