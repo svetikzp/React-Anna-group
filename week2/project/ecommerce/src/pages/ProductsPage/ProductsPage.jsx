@@ -1,6 +1,6 @@
-import React from 'react'
-import Categories from '../../components/product/categories'
-import Products from '../../components/product/products'
+import React from 'react';
+import Categories from '../../../src/pages/ProductsPage/products/categories';
+import Products from '../../../src/pages/ProductsPage/products/products'
 
 
 

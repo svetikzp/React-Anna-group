@@ -1,13 +1,13 @@
-import Product from './product'
-import React from 'react'
-import ErrorMessage from '../overallElem/ErrorMessage'
-import '../product/product.css'
-import Revs from '../overallElem/Revs/Revs'
+import Product from './product';
+import React, { useState } from 'react';
+import ErrorMessage from '../../../components/overallElem/error/ErrorMessage';
+import '../../../../src/pages/ProductsPage/products/style/product.css';
+import Revs from '../../../components/overallElem/Revs/Revs'
 
 function Products({ prodCategory }) {
-   const [productList, setProductList] = React.useState([])
-   const [isLoading, setIsLoading] = React.useState(false);
-   const [errorObj, setErrorObj] = React.useState({ isError: false, message: '' })
+   const [productList, setProductList] = useState([])
+   const [isLoading, setIsLoading] = useState(false);
+   const [errorObj, setErrorObj] = useState({ isError: false, message: '' })
 
 
    async function getProductList() {
@@ -27,7 +27,8 @@ function Products({ prodCategory }) {
       }
    }
 
-   React.useEffect(() => { getProductList() }, [prodCategory] )
+   // eslint-disable-next-line
+   React.useEffect(() => { getProductList() }, [prodCategory])
 
    return (
       <div>
@@ -43,5 +44,3 @@ function Products({ prodCategory }) {
 }
 
 export default Products
-
-

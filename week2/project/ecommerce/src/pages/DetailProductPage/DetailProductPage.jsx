@@ -1,17 +1,17 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import DetailProduct from '../../components/product/DetailProduct'
-import './detailProductPage.css'
-import ErrorMessage from '../../components/overallElem/ErrorMessage';
+import React, { useState, useEffect, useCallback } from 'react';
+import { useParams } from 'react-router-dom';
+import DetailProductPage from '../../pages/DetailProductPage/DetailProductPage';
+import '../../pages/DetailProductPage/detailProductPage.css';
+import ErrorMessage from '../../components/overallElem/error/ErrorMessage';
 import Revs from '../../components/overallElem/Revs/Revs';
 
 export default function ProductDetail() {
    const { itemId } = useParams();
-   const [errorObj, setErrorObj] = React.useState({ isError: false, message: '' })
-   const [itemInfo, setItemInfo] = React.useState([]);
-   const [isLoading, setIsLoading] = React.useState(false);
+   const [errorObj, setErrorObj] = useState({ isError: false, message: '' })
+   const [itemInfo, setItemInfo] = useState([]);
+   const [isLoading, setIsLoading] = useState(false);
 
-   const getItemInfo = React.useCallback(async () => {
+   const getItemInfo = useCallback(async () => {
       try {
          setIsLoading(true);
          const promise = await fetch(`https://fakestoreapi.com/products/${itemId}`);
@@ -21,19 +21,18 @@ export default function ProductDetail() {
       catch (error) {
          setErrorObj({ isError: true, message: error.message })
       }
-  
-      setTimeout(() => {
+      finally {
          setIsLoading(false);
-       }, 1000)
-      
+      }
    }, [itemId])
 
-   React.useEffect(() => { getItemInfo() }, [itemId, getItemInfo])
+   useEffect(() => { getItemInfo() }, [itemId, getItemInfo])
 
    return (
       <div className='detailItemContainer'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
-         {isLoading ? <Revs /> : <DetailProduct itemInfo={itemInfo} />}
+         {isLoading && <Revs />}
+         {itemInfo && <DetailProductPage itemInfo={itemInfo} />}
       </div>
    )
 }
