@@ -4,10 +4,11 @@
 
 .headTitle {
   text-align: center;
-  color: rgb(95, 9, 176);
+  color: rgb(80, 5, 150);
+  
 }
 
 .errorMessage {
-  color: rgb(15, 130, 98);
+  color: rgb(5, 122, 89);
   text-align: center;
 }
