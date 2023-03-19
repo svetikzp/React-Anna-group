@@ -16,7 +16,7 @@ export default function ProductDetail() {
          setIsLoading(true);
          const promise = await fetch(`https://dummyjson.com/products/${itemId}`);
          const item = await promise.json();
-         setItemInfo(item);
+         setItemInfo(item); 
       }
       catch (error) {
          setErrorObj({ isError: true, message: error.message })
