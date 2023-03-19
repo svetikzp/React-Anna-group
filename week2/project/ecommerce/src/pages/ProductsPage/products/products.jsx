@@ -27,7 +27,6 @@ function Products({ prodCategory }) {
       }
    }
 
-   // eslint-disable-next-line
    React.useEffect(() => { getProductList() }, [prodCategory])
 
    return (
@@ -43,4 +42,4 @@ function Products({ prodCategory }) {
    )
 }
 
-export default Products
+export default Products;
