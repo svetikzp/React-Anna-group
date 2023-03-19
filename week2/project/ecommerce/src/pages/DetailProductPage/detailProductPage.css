@@ -71,7 +71,6 @@
  
     .detailItemImage {
        display: flex;
-       grid-area: image;
        object-fit: contain;
        max-height: 600px;
        width: 100%;

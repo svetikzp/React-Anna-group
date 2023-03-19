@@ -1,6 +1,6 @@
 .revs {
-    border: 7px solid #eeecec;
-    border-top: 7px solid #8fd651;
+    border: 7px solid #edd2f6;
+    border-top: 7px solid #4edfd3;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -18,6 +18,6 @@
  }
  
  .loading {
-    color: #a2a1a1;
+    color: #f1dddd;
  }
  
