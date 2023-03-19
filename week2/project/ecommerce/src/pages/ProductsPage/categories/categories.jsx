@@ -1,15 +1,15 @@
-import React from 'react'
-import ErrorMessage from '../overallElem/ErrorMessage';
+import React, { useState, useEffect } from 'react'
+import ErrorMessage from '../../../components/common/Error/ErrorMessage';
 import Category from './category'
-import Revs from '../overallElem/Revs/Revs'
-import './product.css'
+import Spinner from './../../components/common/Spinner/Spinner'
+import '../css/product.css'
 
 function Categories({ onClick, activeCategory }) {
-   const [CategoriesList, setCategoriesList] = React.useState([]);
-   const [isLoading, setIsLoading] = React.useState(false);
-   const [errorObj, setErrorObj] = React.useState({ isError: false, message: '' })
+   const [CategoriesList, setCategoriesList] = useState([]);
+   const [isLoading, setIsLoading] = useState(false);
+   const [errorObj, setErrorObj] = useState({ isError: false, message: '' })
 
-   React.useEffect(() => { getCategoriesList() }, []);
+   useEffect(() => { getCategoriesList() }, []);
 
    async function getCategoriesList() {
       try {
@@ -27,10 +27,10 @@ function Categories({ onClick, activeCategory }) {
    }
 
    return (
-      <div className='categories-collection '>
+      <div className='categories-container'>
          {errorObj.isError && <ErrorMessage errorMsg={errorObj.message} />}
          <div className='categories'>
-            {isLoading ? <div><Revs /></div> :
+            {isLoading ? <div><Spinner /></div> :
                CategoriesList.map((category, index) => {
                   return <Category key={index} category={category} onClick={onClick} activeCategory={activeCategory} />
                })}
