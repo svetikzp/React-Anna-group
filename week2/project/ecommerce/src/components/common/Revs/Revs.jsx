@@ -5,7 +5,7 @@ export default function Revs() {
    return (
       <div>
          <div className='revs'></div>
-         <p className='loading'>Loading...</p>
+         <p className='loading'>Loading....</p>
       </div>
    )
 }
