@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { useParams } from 'react-router-dom';
-import DetailProduct from '../../pages/DetailProductPage/DetailProduct';
-import '../DetailProductPage/detailProductPage.css';
-import ErrorMessage from '../../components/overallElem/error/ErrorMessage';
-import Revs from '../../components/overallElem/Revs/Revs';
+import React, { useState, useEffect, useCallback } from 'react'
+import { useParams } from 'react-router-dom'
+import DetailProduct from './detailProduct/DetailProduct'
+import './css/detailProductPage.css'
+import ErrorMessage from '../../components/common/Error/ErrorMessage';
+import Revs from '../../components/common/Revs/Revs';
 
 export default function ProductDetail() {
    const { itemId } = useParams();

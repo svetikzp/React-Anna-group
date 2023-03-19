@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import ErrorMessage from '../../../components/overallElem/error/ErrorMessage';
-import Category from './category';
-import Revs from '../../../components/overallElem/Revs/Revs';
-import '../products/style/product.css'
+import ErrorMessage from '../../../components/common/Error/ErrorMessage';
+import Category from './category'
+import Revs from '../../../components/common/Revs/Revs'
+import '../css/product.css'
 
 function Categories({ onClick, activeCategory }) {
    const [CategoriesList, setCategoriesList] = useState([]);
@@ -39,4 +39,4 @@ function Categories({ onClick, activeCategory }) {
    )
 }
 
-export default Categories;
+export default Categories
