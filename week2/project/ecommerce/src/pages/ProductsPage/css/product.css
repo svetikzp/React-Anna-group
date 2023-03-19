@@ -1,0 +1,117 @@
+.categories-collection {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+ }
+ 
+ .categories {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    max-width: 800px;
+    padding: 5px;
+    justify-content: center;
+    border: 3px solid #ea89c8;
+    margin-bottom: 10px;
+ }
+ 
+ .productList-collection {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .productList {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+    padding: 10px;
+    background-color: #e9f5f4;
+ }
+ 
+ .itemBlockWrap {
+    width: 100%;
+ }
+ 
+ @media (min-width: 600px) {
+    .itemBlockWrap {
+       width: 50%;
+    }
+ 
+    .button {
+       margin: 10px;
+       height: 40px;
+       width: 180px;
+    }
+ 
+ }
+ 
+ @media (min-width: 900px) {
+    .itemBlockWrap {
+       width: 33%;
+    }
+ }
+ 
+ @media (min-width: 1300px) {
+    .itemBlockWrap {
+       width: 25%;
+    }
+ }
+ 
+ .button {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 213, 213);
+    height: 45px;
+    width: 130px;
+    font-size: medium;
+    color: rgb(61, 3, 94);
+    transition: background 0.8s, border 0.8s ease;
+    box-shadow: 3px 2px 2px rgb(198, 236, 234);
+ }
+ 
+ .itemBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px;
+ }
+ 
+ .itemTitle {
+    font-size: small;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    height: 60px;
+    box-sizing: border-box;
+ }
+ 
+ .itemImage {
+    object-fit: contain;
+    padding: 3px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+ }
+ 
+ .button:hover {
+    background: #fce3ff;
+    border: 1px solid rgb(176, 174, 174);
+ }
+ 
+ .button:active {
+    background: #b4f7f5;
+    border: 1px solid rgb(176, 174, 174);
+ }
+ 
+ .active {
+    background: #f5e6fe;
+ }
+ 
+ .active:hover {
+    background: #baf1e2;
+    border: 1px solid black;
+ }
