@@ -27,8 +27,7 @@ function Products({ prodCategory }) {
       }
    }
 
-   /*useEffect(() => { getProductList()} , [prodCategory] )*/
-   useEffect(() => { getProductList()})
+   useEffect(() => { getProductList()} , [prodCategory] )
 
    return (
       <div>
