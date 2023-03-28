@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { FavoriteContext } from '../context/FavoriteContext'
 import regHeart from '../assets/heart-regular.svg'
-import solHeart from '../assets/heart-solid.svg'
+import solHeart from './../heart-solid.svg'
 	
 	const useFavoritesHeart = (id) => {
 		const productId = id.itemId;
@@ -25,6 +25,6 @@ import solHeart from '../assets/heart-solid.svg'
 			<img className="heart" src={heart} alt="heart" />
 		  </button>
 		);
-	  };
+	  }
 	  export default useFavoritesHeart
 
