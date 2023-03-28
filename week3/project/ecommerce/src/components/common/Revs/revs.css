@@ -1,0 +1,22 @@
+.revs {
+    border: 7px solid #f7d5f1;
+    border-top: 7px solid #32e4c3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+ }
+ 
+ @keyframes spin {
+    0% {
+       transform: rotate(0deg);
+    }
+ 
+    100% {
+       transform: rotate(360deg);
+    }
+ }
+ 
+ .loading {
+    color: #f6e9eb;
+ }

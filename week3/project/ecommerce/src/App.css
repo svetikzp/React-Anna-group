@@ -1,0 +1,14 @@
+.App {
+  padding: 2px;
+  background-color: #f1e8f4;
+}
+
+.headTitle {
+  text-align: center;
+  color: rgb(61, 3, 67);
+}
+
+.errorMessage {
+  color: rgb(5, 130, 94);
+  text-align: center;
+}
