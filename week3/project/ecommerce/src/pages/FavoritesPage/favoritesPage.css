@@ -8,7 +8,8 @@
  .messageEmptyList {
     display: flex;
     font-size: large;
-    color: darkblue;
+    color: rgb(69, 6, 74);
+    border-radius: 15px;
+    background: rgb(229, 245, 242);
  }
-
 

@@ -6,14 +6,11 @@ export default function Nav() {
    return (
       <div className='nav'>
          <nav >
-            <Link to='/'>
-               <button className='navBtn'>HOME</button>
-            </Link>
             <Link to='/products'>
                <button className='navBtn'>PRODUCTS</button>
             </Link>
             <Link to='/products/favorite'>
-               <button className='navBtn'>FAVORITES PRODUCTS</button>
+               <button className='navBtn'>FAVORITE PRODUCTS</button>
             </Link>
          </nav>
       </div>

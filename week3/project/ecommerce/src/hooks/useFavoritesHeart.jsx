@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from 'react'
 import { FavoriteContext } from '../context/FavoriteContext'
 import svgReg from '../../src/assets/heart-regular.svg/heart-regular.svg'
 import svgSol from '../../src/assets/heart-solid.svg/heart-solid.svg'
-//import from './useFavoritesHeart.css'
 
 export default function useFavoritesHeart(itemId) {
 	

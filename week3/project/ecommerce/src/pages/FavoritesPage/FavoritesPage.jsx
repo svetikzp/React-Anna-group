@@ -33,7 +33,7 @@ import React, { useContext, useEffect, useState } from 'react'
 	                  {isLoading && <div><Revs /></div>}
 	                  {favItemData.length > 0
 	                     ? favItemData.map((item) => <Product key={item.id} item={item} />)
-	                     : <div className='messageEmptyList'>Products favorites list is empty...</div>}
+	                     : <div className='messageEmptyList'>Favorite products not selected...</div>}
 	               </div>
 	            </div>
 	         </div>

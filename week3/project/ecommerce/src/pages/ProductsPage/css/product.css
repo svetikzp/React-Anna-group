@@ -1,7 +1,7 @@
 .categories-collection {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(230, 202, 237, 0.2);
     backdrop-filter: blur(15px);
     display: flex;
     width: 100%;
@@ -15,7 +15,6 @@
     max-width: 800px;
     padding: 5px;
     justify-content: center;
-    /*border: 3px solid #ea89c8;*/
     margin-bottom: 10px;
  }
  
@@ -29,11 +28,13 @@
     flex-wrap: wrap;
     max-width: 1700px;
     padding: 10px;
-    background-color: #e9f5f4;
+    background-color: #e1f5f2;
+    border-radius: 15px;
  }
  
  .itemBlockWrap {
     width: 100%;
+    border-radius: 20px;
  }
  
  @media (min-width: 600px) {
@@ -95,23 +96,25 @@
     height: 300px;
     width: 100%;
     box-sizing: border-box;
+    border-radius: 24px;
  }
  
  .button:hover {
     background: #fce3ff;
-    border: 1px solid rgb(176, 174, 174);
+    border: 1px solid rgb(177, 189, 187);
  }
  
  .button:active {
     background: #b4f7f5;
-    border: 1px solid rgb(176, 174, 174);
+    border: 1px solid rgb(224, 207, 224);
  }
  
  .active {
-    background: #f5e6fe;
+    background: #efdcf9;
  }
  
  .active:hover {
-    background: #baf1e2;
+    background: #b4f5e4;
     border: 1px solid black;
  }
+
