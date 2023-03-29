@@ -6,7 +6,7 @@
     height: 60px;
     justify-content: center;
     align-items: center;
-    background: rgba(27, 39, 87, 0.2);
+    background: rgba(79, 27, 87, 0.2);
     backdrop-filter: blur(15px);
     z-index: 100;
  }
@@ -15,7 +15,7 @@
     height: 40px;
     width: 180px;
     border-radius: 5px;
-    border: 1px solid grey;
+    border: 1px solid rgb(146, 243, 246);
     margin: 0px 10px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(30px);
@@ -24,11 +24,11 @@
  }
  
  .navBtn:hover {
-    background: rgb(147, 153, 174);
+    background: rgb(200, 167, 244);
  }
  
  .navBtn:active {
-    background: rgb(124, 129, 149);
-    box-shadow: 1px 1px 1px rgb(116, 116, 116);
+    background: rgb(160, 241, 237);
+    box-shadow: 1px 1px 1px rgb(245, 190, 244);
  }
 

@@ -1,4 +1,4 @@
-.favorites-btn {
+svgIcon {
     background-color: #fff;
     border: none;
     margin: 15px;
@@ -6,7 +6,10 @@
     margin-left: 260px;
     width: 30px;
   }
-  .heart {
+  svgReg {
     width: 20px;
   }
   
+  svgSol{
+    width: 20px;
+  }

@@ -1,8 +1,8 @@
 import React from 'react'
-import useFavoriteItems from '../../../components/useFavoritesHeart'
+import useFavoritesHeart from '../../../hooks/useFavoritesHeart'
 
 export default function DetailProduct({ itemInfo }) {
-   const { svgIcon, favoriteIdHandler } = useFavoriteItems(itemInfo.id)
+   const { svgIcon, favoriteIdHandler } = useFavoritesHeart(itemInfo.id)
 
    return (
       <div className='detailItemWrap'>

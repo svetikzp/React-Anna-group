@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import useFavoritesHeart from '../../../components/useFavoritesHeart'
+import useFavoritesHeart from '../../../hooks/useFavoritesHeart'
 	
 export default function Product({ item }) {
 
